@@ -1,3 +1,11 @@
+function listarPerfiles () {
+    return fetch("http://localhost:3000/perfil").then(respuesta =>{
+        console.log(respuesta)
+    }).catch((error) => {
+        console.log(error)
+    })
+}
+
 function agregarPerfil (perfil) {
     return fetch("http://localhost:3000/perfil", {
         method: "POST",
@@ -15,5 +23,5 @@ function agregarPerfil (perfil) {
 
 export const clientService = {
     agregarPerfil,
-
+    listarPerfiles,
 }

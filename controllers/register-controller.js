@@ -1,14 +1,8 @@
-import { clientService } from "../service/client-services";
+import {clientService} from "../service/client-services.js"
 
 
-function listarPerfiles () {
-    return fetch("http://localhost:3000/perfil").then(respuesta =>{
-        console.log(respuesta)
-    }).catch((error) => {
-        console.log(error)
-    })
-}
-listarPerfiles();
+
+clientService.listarPerfiles();
 
 
 const form = document.querySelectorAll('#formulario')
