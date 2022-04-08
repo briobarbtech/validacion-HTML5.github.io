@@ -35,6 +35,10 @@ const mensajesError = {
     nacimiento: {
         valueMissing: "Este campo no puede estar vacío",
         customError: "Debes tener al menos 18 años"
+    },
+    numero: {
+        valueMissing: "El número de teléfono no puede estar vacío",
+        patternMismatch: "El formato requerido es (xxx)-xxxxxxx"
     }
 }
 
